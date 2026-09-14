@@ -3,7 +3,7 @@
 class Zbrew < Formula
   desc "Package manager alternative to Homebrew, in Rust"
   homepage "https://github.com/HernandoR/zbrew"
-  version "0.4.0-rc.1"
+  version "0.4.0"
   license all_of: ["Apache-2.0", "MIT"]
 
   # Linux uses the statically linked musl build, so there is no glibc
@@ -11,20 +11,20 @@ class Zbrew < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zb-darwin-arm64"
+      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zb-darwin-arm64"
       sha256 "893425c949849a5c37ef725d89307d775fc73ee9992f20f9b2090cf5462810db"
 
       resource "zbx" do
-        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zbx-darwin-arm64"
+        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zbx-darwin-arm64"
         sha256 "9cbb264067c8c9ae926530b6274eabaf192660e3e41fb9d87ff1a6b5dc18857d"
       end
     end
     on_intel do
-      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zb-darwin-x64"
+      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zb-darwin-x64"
       sha256 "ea1198578e89d0c84769a8d9d33f99e70be6e2a4f9f4ce37a33ead9a53326a97"
 
       resource "zbx" do
-        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zbx-darwin-x64"
+        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zbx-darwin-x64"
         sha256 "5650df5d93e4b5ae73df60aa266d8881e4dac64baaec0b92a0515ba12daf6ed0"
       end
     end
@@ -32,20 +32,20 @@ class Zbrew < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zb-linux-arm64-musl"
+      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zb-linux-arm64-musl"
       sha256 "3549530f158c1e1ecaaadd7510e67b4f3ebfad1abe00f57f8241a68937cca586"
 
       resource "zbx" do
-        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zbx-linux-arm64-musl"
+        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zbx-linux-arm64-musl"
         sha256 "b0eafba5af49eca9fe4011c06c3ed2e8f29e768da400e0a6b066c3272b1a7aef"
       end
     end
     on_intel do
-      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zb-linux-x64-musl"
+      url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zb-linux-x64-musl"
       sha256 "b51f3554350bd979633834e0563afb9c7450458dfbea86f28e40d7c7e7d11bc7"
 
       resource "zbx" do
-        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0-rc.1/zbx-linux-x64-musl"
+        url "https://github.com/HernandoR/zbrew/releases/download/v0.4.0/zbx-linux-x64-musl"
         sha256 "97fc6aaacac7d9cb60a2c85bd39950a2fddb6754c18ce8943fd1330ea1fe5da7"
       end
     end
